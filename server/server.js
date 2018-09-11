@@ -15,7 +15,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // por alguna razon las rutas deben de ir debajo de bodyPraser
-app.use(require('./rutas/usuario'));
+//configuracion global de rutas 
+app.use(require('./rutas/index'));
+
  
 
 mongoose.connect(process.env.URLDB, {useNewUrlParser: true }, (err , res) =>{

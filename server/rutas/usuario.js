@@ -1,6 +1,6 @@
 const express = require('express');
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');  //encriptar la contraseña del usuario 
 const _ = require('underscore');
 
 const Registro = require('../models/usuario');
